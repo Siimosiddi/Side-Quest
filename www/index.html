@@ -95,6 +95,13 @@ input{width:100%;background:var(--dk);border:0;border-radius:12px;color:var(--tx
 .tg{font-size:10px;padding:2px 7px;border-radius:99px;border:1px solid;margin-left:8px}
 .thumb{width:40px;height:40px;border-radius:8px;object-fit:cover}
 </style>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="SIDE QUEST">
+<meta name="theme-color" content="#0D0D0F">
 </head>
 <body>
 <div id="app">
@@ -419,5 +426,6 @@ function renderFr(){const rows=[{n:"Tu",s:Streak.cur(S.vs),b:S.vs.b},...S.friend
 document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>show(b.dataset.v));
 renderHome();
 </script>
+<script>if('serviceWorker' in navigator)addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})});</script>
 </body>
 </html>
