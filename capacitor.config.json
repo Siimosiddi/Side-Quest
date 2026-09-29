@@ -1,0 +1,9 @@
+{
+  "appId": "com.sidequest.app",
+  "appName": "SIDE QUEST",
+  "webDir": "www",
+  "backgroundColor": "#0D0D0F",
+  "android": {
+    "backgroundColor": "#0D0D0F"
+  }
+}
